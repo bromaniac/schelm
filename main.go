@@ -5,7 +5,6 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"path"
@@ -83,7 +82,7 @@ func main() {
 		}
 		if _, err := os.Stat(destinationFile); os.IsNotExist(err) {
 			log.Printf("Creating %s", destinationFile)
-			if err := ioutil.WriteFile(destinationFile, []byte(content), 0640); err != nil {
+			if err := os.WriteFile(destinationFile, []byte(content), 0640); err != nil {
 				log.Fatalf("Error: %s", err)
 			}
 		} else {
