@@ -2,24 +2,9 @@ Render a [helm](https://github.com/kubernetes/helm) manifest to a directory.
 
 # Installation
 ```
-go get -u github.com/databus23/schelm
+go get -u github.com/bromaniac/schelm
 ```
 # Usage:
-
-## Helm 2:
-```
-helm install --dry-run --debug CHART > manifest.txt
-schelm OUTPUT_DIR < manifest.txt
-
-or
-
-helm install --dry-run --debug CHART | schelm OUTPUT_DIR
-
-or
-
-helm get RELEASE manifest | schelm OUTPUT_DIR
-
-```
 
 ## Helm 3:
 ```

@@ -1,0 +1,38 @@
+# Binaries for programs and plugins
+schelm
+schelm_refactored
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.*
+
+# Dependency directories (uncomment if you use vendoring)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Environment variables file
+.env*
+!.env.example
+
+# IDE/Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# llm
+.aider*
